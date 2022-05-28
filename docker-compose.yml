@@ -1,0 +1,11 @@
+version: '3'
+services:
+  oneservice:
+    image: node:16
+    volumes:
+      - ./superface:/superface
+    ports:
+      - 8000:8000
+    command: npx @superfaceai/one-service --host 0.0.0.0 --graphiql
+    
+    

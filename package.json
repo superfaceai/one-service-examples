@@ -1,0 +1,13 @@
+{
+  "name": "one-service-example",
+  "version": "0.1.0",
+  "description": "One Service Configuration and Deployment Example",
+  "author": "Ondrej Musil <o@superface.ai>",
+  "license": "MIT",
+  "scripts": {
+    "start": "oneservice --graphiql"
+  },
+  "dependencies": {
+    "@superfaceai/one-service": "^1.0.0-rc.2"
+  }
+}

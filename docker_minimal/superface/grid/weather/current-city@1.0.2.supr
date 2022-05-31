@@ -1,0 +1,86 @@
+"""
+Current Weather In City
+Get current weather for the city
+"""
+
+name = "weather/current-city"
+version = "1.0.2"
+
+"""
+Get Current Weather In City
+Get current weather in the city in chosen units.
+"""
+usecase GetCurrentWeatherInCity safe {
+  input {
+    """
+    city
+    Name of the city including state and country, e.g.: "Prague, Czech Republic" or "New York City, NY, USA"
+    """
+    city! string!
+    
+    """
+    units
+    Units used to represent temperature - Fahrenheit, Celsius, Kelvin
+    Celsius by default
+    """
+    units enum {C, F, K}
+  }
+
+  result {
+    """
+    temperature
+    Temperature in specified units
+    """
+    temperature! number!
+    
+    """
+    feelsLike
+    Subjective temperature in specified units
+    """
+    feelsLike number!
+    
+    """
+    description
+    Text description of weather, e.g. "Partly cloudy"
+    """
+    description string!
+  }
+
+  error {
+    """
+    title
+    A short, human-readable summary of the problem type
+    """
+    title!
+
+    """
+    detail
+    A human-readable explanation specific to this occurrence of the problem
+    """
+    detail
+  }
+
+  example Successful {
+    input {
+      city = 'Prague, Czech Republic',
+      units = 'C'
+    }
+
+    result {
+      temperature = 9,
+      feelsLike = 8,
+      description = 'Partly cloudy'
+    }
+  }
+
+  example Failed {
+    input {
+      city = 'dreamtown'
+    }
+
+    error {
+      title = 'Bad request'
+      detail = 'City cannot be found'
+    }
+  }
+}

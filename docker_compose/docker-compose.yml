@@ -8,4 +8,3 @@ services:
       - 8000:8000
     command: npx @superfaceai/one-service --host 0.0.0.0 --graphiql
     
-    

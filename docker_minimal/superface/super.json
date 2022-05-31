@@ -1,0 +1,198 @@
+{
+  "profiles": {
+    "address/clean-address": {
+      "version": "1.1.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "address/geocoding": {
+      "version": "3.1.2",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "communication/send-sms": {
+      "version": "2.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "communication/send-message": {
+      "version": "2.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "communication/send-email": {
+      "version": "2.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "communication/send-templated-email": {
+      "version": "1.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "communication/email-templates": {
+      "version": "1.0.2",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "computer-vision/face-detection": {
+      "version": "1.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "crm/contacts": {
+      "version": "1.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "crypto/exchange-rate": {
+      "version": "1.0.0",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "language/analyze-plain-text-sentiment": {
+      "version": "1.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "language/translate": {
+      "version": "1.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "speech/synthesis": {
+      "version": "1.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "speech/recognize": {
+      "version": "1.0.0",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "vcs/user-repos": {
+      "version": "2.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "vcs/single-file-content": {
+      "version": "1.1.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "vcs/pull-request": {
+      "version": "1.1.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "vcs/pull-requests": {
+      "version": "2.0.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "weather/current-city": {
+      "version": "1.0.2",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "delivery-tracking/shipment-info": {
+      "version": "1.1.1",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    },
+    "starwars/character-information": {
+      "version": "1.0.4",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    }
+  },
+  "providers": {
+    "mock": {
+      "security": []
+    }
+  }
+}

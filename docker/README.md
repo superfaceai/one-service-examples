@@ -1,0 +1,12 @@
+# Run OneService with complete Dockerfile
+
+Build image:
+```shell
+docker build --tag one-service-example .
+```
+
+Run:
+```shell
+docker run --rm -it -p 8000:8000 one-service-example --graphiql
+```
+
